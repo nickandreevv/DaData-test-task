@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container" id="main_input">
+        <p><strong>Компания или ИП</strong></p>
+        <input
+          class="container__party"
+          id="party"
+          name="party"
+          type="text"
+          placeholder="Введите название, ИНН, ОГРН или адрес организации"
+        />
+        <div id="Companies" class="companies-content">
+          <ul id="menu" class="menu">
+            Выберите вариант или продолжите ввод
+          </ul>
+        </div>
+      </div>
+      <div class="result">
+        <p id="type"></p>
+        <div class="row">
+          <label>Краткое наименование</label>
+          <input id="short_name" />
+        </div>
+        <div class="row">
+          <label>Полное наименование</label>
+          <input id="full_name" />
+        </div>
+        <div class="row">
+          <label>ИНН / КПП</label>
+          <input id="inn_kpp" />
+        </div>
+        <div class="row">
+          <label>Адрес</label>
+          <input id="address" />
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
